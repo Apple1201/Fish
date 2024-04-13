@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using TMPro;
 using StarterAssets;
+using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -24,15 +25,18 @@ public class DialogueManager : MonoBehaviour
 
     private int currentDialogueIndex = 0;
 
+    Animator StarterAssetsThridPerson;
     private void Start()
     {
         dialogueParent.SetActive(false);
         playerCamera = Camera.main.transform;
+        StarterAssetsThridPerson = gameObject.GetComponent<Animator>();
     }
-
+    //Is it you?//
     public void DialogueStart(List<dialogueString> textToPrint, Transform NPC)
     {
         dialogueParent.SetActive(true);
+        StarterAssetsThridPerson.speed = 0.1f; //////////////////////////////
         thirdPersonController.enabled = false;
 
         Cursor.lockState = CursorLockMode.None;
@@ -149,6 +153,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         dialogueParent.SetActive(false);
 
+        StarterAssetsThridPerson.speed = 1; ///////////////////////////////
         thirdPersonController.enabled = true;
 
         //Cursor.lockState = CursorLockMode.Locked;
