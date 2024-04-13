@@ -5,15 +5,18 @@ using TMPro;
 
 public class NegativityUI : MonoBehaviour
 {
-    private TMP_Text _negativityText;
+    [SerializeField] TextMeshProUGUI negativityText;
 
-    private void Awake()
+    ScoreController scoreController;
+    private void Start()
     {
-        _negativityText = GetComponent<TMP_Text>();
+        scoreController = GameObject.FindGameObjectWithTag("ScoreController").GetComponent<ScoreController>();
+        UpdateNegativity();
     }
 
-    public void UpdateNegativity(ScoreManager scoreManager)
+    public void UpdateNegativity()
     {
-        _negativityText.text = $"{scoreManager.Negativity} / 3";
+        scoreController.AddNegativity();
+        negativityText.text = scoreController.Negativity + " / 3";
     }
 }

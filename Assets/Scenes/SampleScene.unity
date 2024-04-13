@@ -1358,13 +1358,10 @@ MonoBehaviour:
     option2IndexJump: 0
     startDialogueEvent:
       m_PersistentCalls:
-        m_Calls: []
-    endDialogueEvent:
-      m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2051935732}
-          m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-          m_MethodName: NegativityIncreased
+        - m_Target: {fileID: 2051935735}
+          m_TargetAssemblyTypeName: NegativityUI, Assembly-CSharp
+          m_MethodName: UpdateNegativity
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1374,6 +1371,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    endDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - text: '"Ha...what on earth am I doing? Is this my hoarding tendencies kicking
       in again?"'
     isEnd: 0
@@ -1398,13 +1398,10 @@ MonoBehaviour:
     option2IndexJump: 0
     startDialogueEvent:
       m_PersistentCalls:
-        m_Calls: []
-    endDialogueEvent:
-      m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2051935732}
-          m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-          m_MethodName: PositivityIncreased
+        - m_Target: {fileID: 2051935736}
+          m_TargetAssemblyTypeName: PositivityUI, Assembly-CSharp
+          m_MethodName: UpdatePositivity
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1414,6 +1411,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    endDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - text: '"I have participated in this type of competition before."'
     isEnd: 0
     isQuestion: 0
@@ -1450,13 +1450,10 @@ MonoBehaviour:
     option2IndexJump: 0
     startDialogueEvent:
       m_PersistentCalls:
-        m_Calls: []
-    endDialogueEvent:
-      m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2051935732}
-          m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-          m_MethodName: PositivityIncreased
+        - m_Target: {fileID: 2051935736}
+          m_TargetAssemblyTypeName: PositivityUI, Assembly-CSharp
+          m_MethodName: UpdatePositivity
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1466,6 +1463,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    endDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
   NPCTransform: {fileID: 334287520}
 --- !u!1001 &340923178
 PrefabInstance:
@@ -3201,11 +3201,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720967687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 164c5327262cb5746810a0b896f7ff60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positivityText: {fileID: 720967688}
 --- !u!1001 &747607996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3588,11 +3589,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838687838}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67582e3187bced744ade3eb72de38eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  negativityText: {fileID: 838687840}
 --- !u!1001 &858080217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4857,7 +4859,8 @@ MonoBehaviour:
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
-  - text: "\u201CThe road to work, every day, it is the same\u2026\u201D"
+  - text: "\u201CThe road to work, every day, it is the same\u2026the same scenery,
+      over and over\u2026\u201D"
     isEnd: 0
     isQuestion: 0
     answerOption1: 
@@ -4870,7 +4873,7 @@ MonoBehaviour:
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
-  - text: "\"the same scenery, over and over\u2026\u201D"
+  - text: "\u201CThe more I look at it, the more it looks like a looping picture\u2026\u201D"
     isEnd: 0
     isQuestion: 0
     answerOption1: 
@@ -5658,13 +5661,10 @@ MonoBehaviour:
     option2IndexJump: 0
     startDialogueEvent:
       m_PersistentCalls:
-        m_Calls: []
-    endDialogueEvent:
-      m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2051935732}
-          m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-          m_MethodName: NegativityIncreased
+        - m_Target: {fileID: 2051935735}
+          m_TargetAssemblyTypeName: NegativityUI, Assembly-CSharp
+          m_MethodName: UpdateNegativity
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5674,6 +5674,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    endDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - text: "\u201CIf I had continued playing music\u2026\u201D"
     isEnd: 0
     isQuestion: 0
@@ -5696,13 +5699,10 @@ MonoBehaviour:
     option2IndexJump: 0
     startDialogueEvent:
       m_PersistentCalls:
-        m_Calls: []
-    endDialogueEvent:
-      m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2051935732}
-          m_TargetAssemblyTypeName: ScoreManager, Assembly-CSharp
-          m_MethodName: PositivityIncreased
+        - m_Target: {fileID: 2051935736}
+          m_TargetAssemblyTypeName: PositivityUI, Assembly-CSharp
+          m_MethodName: UpdatePositivity
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5712,6 +5712,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    endDialogueEvent:
+      m_PersistentCalls:
+        m_Calls: []
   NPCTransform: {fileID: 420291524}
 --- !u!4 &1561444491 stripped
 Transform:
@@ -11369,28 +11372,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2051935733}
-  - component: {fileID: 2051935732}
+  - component: {fileID: 2051935734}
+  - component: {fileID: 2051935736}
+  - component: {fileID: 2051935735}
   m_Layer: 0
-  m_Name: ScoreManager
-  m_TagString: Untagged
+  m_Name: ScoreController
+  m_TagString: ScoreController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2051935732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2051935731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d20509fedf25ea40aa8d0d322978ef1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Positivity: 0
-  Negativity: 0
 --- !u!4 &2051935733
 Transform:
   m_ObjectHideFlags: 0
@@ -11406,6 +11397,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2051935734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051935731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc952293c0bc7b4d930fb1d5a7a06cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2051935735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051935731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67582e3187bced744ade3eb72de38eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  negativityText: {fileID: 838687840}
+--- !u!114 &2051935736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051935731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164c5327262cb5746810a0b896f7ff60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positivityText: {fileID: 720967688}
 --- !u!1 &2129203975
 GameObject:
   m_ObjectHideFlags: 0

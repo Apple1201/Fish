@@ -1,19 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class PositivityUI : MonoBehaviour
 {
-    private Text _positivityText;
+    [SerializeField] TextMeshProUGUI positivityText;
 
-    private void Awake()
+    ScoreController scoreController;
+    private void Start()
     {
-        _positivityText = GetComponent<Text>();
+        scoreController = GameObject.FindGameObjectWithTag("ScoreController").GetComponent<ScoreController>();
+        UpdatePositivity();
     }
 
-    public void UpdatePositivity(ScoreManager scoreManager)
+    public void UpdatePositivity()
     {
-        _positivityText.text = $"{scoreManager.Positivity} / 3";
+        scoreController.AddPositivity();
+        positivityText.text = scoreController.Positivity + " / 3";
     }
 }
