@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - DialogueController
+  - Environment
   layers:
   - Default
   - TransparentFX
