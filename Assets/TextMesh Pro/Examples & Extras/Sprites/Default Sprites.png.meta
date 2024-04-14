@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: d074d8b4d46fd4b0ba3d00203c869935
-=======
-<<<<<<< Updated upstream
-guid: b4dd8425240a0406f9e33f780176c40b
-=======
-guid: 6ed6dd74541df4f568023013429c12ce
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+guid: a0fc465d6cf04254a2938578735e2383
 TextureImporter:
   fileIDToRecycleName:
     21300000: Default Sprite Asset_0
