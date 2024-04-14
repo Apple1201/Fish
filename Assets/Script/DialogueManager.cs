@@ -37,6 +37,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueParent.SetActive(true);
         StarterAssetsThridPerson.speed = 0.1f; //////////////////////////////
+        thirdPersonController.FootstepAudioVolume = 0f;
         thirdPersonController.enabled = false;
 
         Cursor.lockState = CursorLockMode.None;
@@ -155,6 +156,7 @@ public class DialogueManager : MonoBehaviour
 
         StarterAssetsThridPerson.speed = 1; ///////////////////////////////
         thirdPersonController.enabled = true;
+        thirdPersonController.FootstepAudioVolume = 0.3f;
 
         //Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
