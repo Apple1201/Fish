@@ -1,41 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 
 public class VideoPlayerController : MonoBehaviour
 {
-    public GameObject goodEndObject;
-    public GameObject badEndObject;
+    public GameObject goodEndVideo;
+    public GameObject badEndVideo;
+    public ScoreController scoreController;
 
-    private ScoreController scoreController;
+    private bool hasTriggered = false;
 
-    private bool isPlayingGoodEnd = false;
-    private bool isPlayingBadEnd = false;
-
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        scoreController = FindObjectOfType<ScoreController>();
+        if (!hasTriggered && other.CompareTag("Player") && (scoreController.Positivity + scoreController.Negativity == 3))
+        {
+            goodEndVideo.SetActive(true);
+            badEndVideo.SetActive(true);
+            goodEndVideo.GetComponent<VideoPlayer>().Play();
+            badEndVideo.GetComponent<VideoPlayer>().Play();
+            hasTriggered = true;
+        }
     }
 
-    void Update()
+    private void Update()
     {
-        int positivity = scoreController.Positivity;
-        int negativity = scoreController.Negativity;
-
-        if (positivity > negativity && !isPlayingGoodEnd)
+        if (hasTriggered)
         {
-            isPlayingGoodEnd = true;
-            isPlayingBadEnd = false;
-            goodEndObject.SetActive(true);
-            badEndObject.SetActive(false);
-            Debug.Log("GoodEnd object enabled!");
-        }
-        else if (negativity > positivity && !isPlayingBadEnd)
-        {
-            isPlayingBadEnd = true;
-            isPlayingGoodEnd = false;
-            badEndObject.SetActive(true);
-            goodEndObject.SetActive(false);
-            Debug.Log("BadEnd object enabled!");
+            if (scoreController.Positivity > scoreController.Negativity)
+            {
+                goodEndVideo.SetActive(true);
+                badEndVideo.SetActive(false);
+                goodEndVideo.GetComponent<VideoPlayer>().Play();
+            }
+            else if (scoreController.Negativity > scoreController.Positivity)
+            {
+                goodEndVideo.SetActive(false);
+                badEndVideo.SetActive(true);
+                badEndVideo.GetComponent<VideoPlayer>().Play();
+            }
         }
     }
 }

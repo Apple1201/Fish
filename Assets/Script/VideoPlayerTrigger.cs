@@ -4,6 +4,7 @@ using UnityEngine.Video;
 public class VideoPlayerTrigger : MonoBehaviour
 {
     [SerializeField] private VideoPlayer videoPlayer;
+    [SerializeField] private GameObject videoGameObject;
 
     private bool hasPlayerEntered = false;
 
@@ -12,7 +13,8 @@ public class VideoPlayerTrigger : MonoBehaviour
         if (other.CompareTag("Player") && !hasPlayerEntered)
         {
             hasPlayerEntered = true;
-            videoPlayer.Play(); // Autoplay the video when the player enters the trigger area
+            videoGameObject.SetActive(true); // Enable the video GameObject when the player enters the trigger area
+            videoPlayer.Play(); // Start playing the video
         }
     }
 
@@ -22,6 +24,7 @@ public class VideoPlayerTrigger : MonoBehaviour
         {
             hasPlayerEntered = false;
             videoPlayer.Stop(); // Stop the video when the player exits the trigger area
+            videoGameObject.SetActive(false); // Disable the video GameObject
         }
     }
 }
