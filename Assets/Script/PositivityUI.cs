@@ -11,7 +11,7 @@ public class PositivityUI : MonoBehaviour
     private void Start()
     {
         scoreController = GameObject.FindGameObjectWithTag("ScoreController").GetComponent<ScoreController>();
-        UpdatePositivity();
+        //UpdatePositivity();
     }
 
     public void UpdatePositivity()

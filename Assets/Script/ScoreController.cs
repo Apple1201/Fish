@@ -13,8 +13,6 @@ public class ScoreController : MonoBehaviour
 
     Volume postProcessingVolume;
     ColorAdjustments colorAdjustments;
-
-
     void Start()
     {
         postProcessingVolume = FindObjectOfType<Volume>();
