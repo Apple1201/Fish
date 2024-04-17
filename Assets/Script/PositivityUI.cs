@@ -11,6 +11,7 @@ public class PositivityUI : MonoBehaviour
     private void Start()
     {
         scoreController = GameObject.FindGameObjectWithTag("ScoreController").GetComponent<ScoreController>();
+        positivityText.text = scoreController.Positivity + " / 3";
         //UpdatePositivity();
     }
 

@@ -4,9 +4,9 @@ using UnityEngine.Rendering.Universal;
 
 public class ScoreController : MonoBehaviour
 {
-    public int Positivity { get; private set; } = -1;
-    public int Negativity { get; private set; } = -1;
-    public float contrastChange = 30.0f;
+    public int Positivity { get; private set; } = 0;
+    public int Negativity { get; private set; } = 0;
+    public float contrastChange = 10.0f;
     public float postExposureChange = 2.0f;
     public float saturationChange = 30.0f;
 

@@ -1294,18 +1294,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 1
-        - m_Target: {fileID: 9100000, guid: 40db3173a05ae3242b1c182a09b0a183, type: 2}
-          m_TargetAssemblyTypeName: UnityEngine.AnimationClip, UnityEngine
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 0
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -1371,6 +1359,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1955668445}
+          m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
+          m_MethodName: playsalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -1402,6 +1402,18 @@ MonoBehaviour:
         - m_Target: {fileID: 2051935736}
           m_TargetAssemblyTypeName: PositivityUI, Assembly-CSharp
           m_MethodName: UpdatePositivity
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1955668445}
+          m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
+          m_MethodName: playcorrect
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1454,6 +1466,18 @@ MonoBehaviour:
         - m_Target: {fileID: 2051935736}
           m_TargetAssemblyTypeName: PositivityUI, Assembly-CSharp
           m_MethodName: UpdatePositivity
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1955668445}
+          m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
+          m_MethodName: playcorrect
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3837,8 +3861,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   negativityText: {fileID: 838687840}
-  source: {fileID: 0}
-  clip: {fileID: 0}
 --- !u!1001 &858080217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3932,7 +3954,7 @@ GameObject:
   m_Component:
   - component: {fileID: 924247734}
   - component: {fileID: 924247733}
-  - component: {fileID: 924247736}
+  - component: {fileID: 924247737}
   - component: {fileID: 924247735}
   - component: {fileID: 924247732}
   - component: {fileID: 924247731}
@@ -4037,10 +4059,34 @@ MonoBehaviour:
     option2IndexJump: 2
     startDialogueEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 924247737}
+          m_TargetAssemblyTypeName: VideoPlayerTrigger1, Assembly-CSharp
+          m_MethodName: PlayChoice
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     endDialogueEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 924247737}
+          m_TargetAssemblyTypeName: VideoPlayerTrigger1, Assembly-CSharp
+          m_MethodName: STOPPLAYING
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - text: 
     isEnd: 1
     isQuestion: 0
@@ -4063,9 +4109,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 924247736}
-          m_TargetAssemblyTypeName: VideoPlayerTrigger, Assembly-CSharp
+        - m_Target: {fileID: 924247737}
+          m_TargetAssemblyTypeName: VideoPlayerTrigger1, Assembly-CSharp
           m_MethodName: PlayReply
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1955668445}
+          m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
+          m_MethodName: playcorrect
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4077,7 +4135,19 @@ MonoBehaviour:
           m_CallState: 2
     endDialogueEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 924247737}
+          m_TargetAssemblyTypeName: VideoPlayerTrigger1, Assembly-CSharp
+          m_MethodName: STOPPLAYING
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - text: 
     isEnd: 1
     isQuestion: 0
@@ -4100,9 +4170,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 924247736}
-          m_TargetAssemblyTypeName: VideoPlayerTrigger, Assembly-CSharp
+        - m_Target: {fileID: 924247737}
+          m_TargetAssemblyTypeName: VideoPlayerTrigger1, Assembly-CSharp
           m_MethodName: PlayReject
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1955668445}
+          m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
+          m_MethodName: playsalt
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4114,7 +4196,19 @@ MonoBehaviour:
           m_CallState: 2
     endDialogueEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 924247737}
+          m_TargetAssemblyTypeName: VideoPlayerTrigger1, Assembly-CSharp
+          m_MethodName: STOPPLAYING
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   NPCTransform: {fileID: 420291524}
 --- !u!4 &924247734
 Transform:
@@ -4146,7 +4240,7 @@ MonoBehaviour:
   goodEndVideo: {fileID: 766296620}
   badEndVideo: {fileID: 1869300386}
   scoreController: {fileID: 2051935734}
---- !u!114 &924247736
+--- !u!114 &924247737
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4155,7 +4249,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 924247727}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d25d79b290504bafa42be7f2c3ee18d, type: 3}
+  m_Script: {fileID: 11500000, guid: b4a63349324c09e42966a98075891ffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1246427290}
@@ -4166,6 +4260,7 @@ MonoBehaviour:
   videoGameObjectReject: {fileID: 1001277477}
   reply: 0
   reject: 0
+  choice: 0
   ChooseReplyReject:
     m_PersistentCalls:
       m_Calls: []
@@ -6372,6 +6467,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1955668445}
+          m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
+          m_MethodName: playsalt
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -6401,6 +6508,18 @@ MonoBehaviour:
         - m_Target: {fileID: 2051935736}
           m_TargetAssemblyTypeName: PositivityUI, Assembly-CSharp
           m_MethodName: UpdatePositivity
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1955668445}
+          m_TargetAssemblyTypeName: SoundEffects, Assembly-CSharp
+          m_MethodName: playcorrect
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -11848,9 +11967,9 @@ Transform:
   - {fileID: 459134200}
   - {fileID: 1246427289}
   - {fileID: 1001277478}
+  - {fileID: 1999846712}
   - {fileID: 1869300387}
   - {fileID: 766296621}
-  - {fileID: 1999846712}
   - {fileID: 2137083925}
   m_Father: {fileID: 1408392386}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11969,34 +12088,6 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 2009261775}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1955668438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381985993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67582e3187bced744ade3eb72de38eb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  negativityText: {fileID: 838687840}
-  source: {fileID: 1955668440}
-  clip: {fileID: 8300000, guid: 59954b009f7954f4385c9261ab471c65, type: 3}
---- !u!114 &1955668439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381985993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 164c5327262cb5746810a0b896f7ff60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positivityText: {fileID: 720967688}
 --- !u!82 &1955668440
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12006,12 +12097,13 @@ AudioSource:
   m_GameObject: {fileID: 381985993}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 59954b009f7954f4385c9261ab471c65, type: 3}
+  OutputAudioMixerGroup: {fileID: 840914034137793197, guid: 9a4f5c63214b41644b653518bc1122f7,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 295ccb51c53b5414a865d00c73fe7099, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -12093,6 +12185,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1955668445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381985993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 118a853a7f4ad17458c4f905eeb6468a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 1955668440}
+  Negativity: {fileID: 8300000, guid: 59954b009f7954f4385c9261ab471c65, type: 3}
+  Positivity: {fileID: 8300000, guid: f6697b28f0d2eda4a87f68c66b50fc6c, type: 3}
 --- !u!4 &1993291101 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1155201788279791645, guid: 7c3357e37d91c4f9cb18419680e63efb,
@@ -12315,11 +12422,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1955668439}
-    - targetCorrespondingSourceObject: {fileID: 8944336655422409498, guid: f6d148d888ffbf54b9afe9936dfaec1f,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1955668438}
+      addedObject: {fileID: 1955668445}
   m_SourcePrefab: {fileID: 100100000, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
 --- !u!1 &2031693526
 GameObject:
@@ -12540,8 +12643,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   negativityText: {fileID: 838687840}
-  source: {fileID: 0}
-  clip: {fileID: 0}
 --- !u!114 &2051935736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15508,7 +15609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc952293c0bc7b4d930fb1d5a7a06cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contrastChange: 30
+  contrastChange: 10.2
   postExposureChange: 2
   saturationChange: 30
 --- !u!4 &9064763197230038686

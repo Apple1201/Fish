@@ -8,8 +8,10 @@ public class VideoPlayerTrigger : MonoBehaviour
 
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private GameObject videoGameObject;
+
     [SerializeField] private VideoPlayer videoPlayerReply;
     [SerializeField] private GameObject videoGameObjectReply;
+
     [SerializeField] private VideoPlayer videoPlayerReject;
     [SerializeField] private GameObject videoGameObjectReject;
 
