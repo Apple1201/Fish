@@ -6,9 +6,9 @@ public class ScoreController : MonoBehaviour
 {
     public int Positivity { get; private set; } = 0;
     public int Negativity { get; private set; } = 0;
+    //public float postExposureChange = 0.4f;
     public float contrastChange = 10.0f;
-    public float postExposureChange = 2.0f;
-    public float saturationChange = 30.0f;
+    public float saturationChange = 15.0f;
 
 
     Volume postProcessingVolume;
@@ -50,7 +50,7 @@ public class ScoreController : MonoBehaviour
     void UpdateValues(int value)
     {
         colorAdjustments.contrast.value = value * contrastChange;
-        colorAdjustments.postExposure.value = value * postExposureChange;
+        //colorAdjustments.postExposure.value = value * postExposureChange;
         colorAdjustments.saturation.value = value * saturationChange;
     }
 }

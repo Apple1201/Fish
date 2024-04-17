@@ -7,6 +7,7 @@ public class SoundEffects : MonoBehaviour
     public AudioSource source;
     public AudioClip Negativity;
     public AudioClip Positivity;
+    public AudioClip NewStory;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,4 +30,8 @@ public class SoundEffects : MonoBehaviour
         source.PlayOneShot(Positivity);
     }
 
+    public void playstory()
+    {
+        source.PlayOneShot(NewStory);
+    }
 }
