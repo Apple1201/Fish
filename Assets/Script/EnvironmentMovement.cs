@@ -17,12 +17,12 @@ public class EnvironmentMovement : MonoBehaviour
     void Update()
     {
         // Move the parent object (containing all objects) from right to left continuously
-        parentTransform.Translate(Vector3.left * speed * Time.deltaTime);
+        parentTransform.Translate(Vector3.right * speed * Time.deltaTime); // Change movement direction to right for leftward movement
 
-        // Check if the parent object reaches the left boundary and reset its position to the right boundary
-        if (parentTransform.position.x <= leftBound)
+        // Check if the parent object reaches the right boundary and reset its position to the left boundary
+        if (parentTransform.position.x >= rightBound)
         {
-            parentTransform.position = new Vector3(rightBound, parentTransform.position.y, parentTransform.position.z);
+            parentTransform.position = new Vector3(leftBound, parentTransform.position.y, parentTransform.position.z); // Reset position to left boundary
         }
     }
 }
