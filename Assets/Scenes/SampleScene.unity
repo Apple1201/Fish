@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028373, g: 0.22571398, b: 0.30692294, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3924,11 +3924,11 @@ GameObject:
   m_Component:
   - component: {fileID: 924247734}
   - component: {fileID: 924247733}
+  - component: {fileID: 924247736}
+  - component: {fileID: 924247735}
   - component: {fileID: 924247732}
   - component: {fileID: 924247731}
   - component: {fileID: 924247730}
-  - component: {fileID: 924247735}
-  - component: {fileID: 924247736}
   m_Layer: 0
   m_Name: IG story Trigger
   m_TagString: Untagged
@@ -4055,6 +4055,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 924247736}
+          m_TargetAssemblyTypeName: VideoPlayerTrigger, Assembly-CSharp
+          m_MethodName: PlayReply
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     endDialogueEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -4071,6 +4083,18 @@ MonoBehaviour:
         - m_Target: {fileID: 2051935735}
           m_TargetAssemblyTypeName: NegativityUI, Assembly-CSharp
           m_MethodName: UpdateNegativity
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 924247736}
+          m_TargetAssemblyTypeName: VideoPlayerTrigger, Assembly-CSharp
+          m_MethodName: PlayReject
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4128,6 +4152,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1246427290}
   videoGameObject: {fileID: 1246427288}
+  videoPlayerReply: {fileID: 1999846713}
+  videoGameObjectReply: {fileID: 1999846711}
+  videoPlayerReject: {fileID: 1001277479}
+  videoGameObjectReject: {fileID: 1001277477}
+  reply: 0
+  reject: 0
+  ChooseReplyReject:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &953168426
 GameObject:
   m_ObjectHideFlags: 0
@@ -5377,7 +5410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1374884897
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11981,7 +12014,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999846711}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 77a40d8c0125943639e9f72f5952fc26, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: ead153dc4fd502a4680331ce0a71f233, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}

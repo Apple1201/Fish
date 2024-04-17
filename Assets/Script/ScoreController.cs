@@ -10,8 +10,10 @@ public class ScoreController : MonoBehaviour
     public float postExposureChange = 2.0f;
     public float saturationChange = 30.0f;
 
+
     Volume postProcessingVolume;
     ColorAdjustments colorAdjustments;
+
 
     void Start()
     {
